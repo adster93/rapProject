@@ -1,6 +1,7 @@
-<!-- Thi sis the bootstrap branch -->
+<!DOCTYPE html>
 <html>
 <head>
+<link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
 <script type="text/javascript" src="jquery.min.js"></script>
   <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
@@ -21,10 +22,10 @@
 <body>
 
 <header id="test">
-  <h1>Welcome to the Rhyme Generator</h1>
+<h1>The Rhyme Generator</h1>
 </header>
 
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -59,7 +60,9 @@
 
 <section id="imago">
   <article>
-    <h3>Enter your word and how many words you want that rhyme with your word! </h3>
+    <div id="titleText">
+      <h3 id="explain">enter your word and select how many rhyming words you want! then click RHYMIFY! </h3>
+    </div>
     <div>
       <form action="#" id="searchContent">
         <input type="text" id="searchBox" name="word" placeholder="enter word!"/>
@@ -74,14 +77,15 @@
           <option value="45">45</option>
           <option value="50">50</option>
         </select>
-        <button id="subBut"/>RHYMIFY YOUR WORD!</button>
       </form>
     </div>
-    <iframe id="soundcloud" width="50%" height="200" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/126479867&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+    <button id="subBut"/>RHYMIFY!</button>
     <div id='rhymeBox'>
       <ul id='wordBox'>
       </ul>
       </div>
+    <iframe id="soundcloud" width="50%" height="200" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/126479867&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+    
     <!-- <iframe id="soundcloud" width="50%" height="100" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/165887633%3Fsecret_token%3Ds-eXvq2&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe> -->
   </article>
 </section>
