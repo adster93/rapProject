@@ -1,0 +1,65 @@
+#test {
+
+	border: 4px red solid; 
+	text-align: center;
+	// background-image: url("images/mic.jpeg");
+	color: white;
+	background-color: black;
+	opacity: .5;
+}
+
+#imago{
+
+	background-image: url("images/graffitti.jpeg");
+	text-align: center;
+	height: 800px;
+	opacity: .8;
+
+}
+
+#searchBox{
+	height: 40px;
+	width: 500px;
+	margin-top: 210px;
+	font-size: 20px;
+	margin-left: 250px;
+	text-align: center;
+}
+
+#subBut{
+	height: 43px;
+	width: 200px;
+	margin-top: 170px;
+	font-weight: bold;
+}
+
+h3{
+	color: white;
+}
+
+body {
+
+	background-color: black;
+}
+
+#soundcloud {
+
+	margin-top: 80px;
+}
+
+#rhymeBox{
+
+	height: 500px;
+	width: 300px;
+	border: 1px white solid;
+	margin: auto;
+	background-color: white;
+	color: black;
+}
+
+#wordBox{
+
+	font-size: 20px;
+	font-weight: bold;
+}
+
