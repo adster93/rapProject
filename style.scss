@@ -38,9 +38,24 @@
 
 }
 
+@media only screen and (max-device-width : 620px) {
+	#titleText{
+		margin:auto;
+		width: 200px;
+		height: 200px;
+		#explain{
+		font-family: 'Indie Flower', cursive;
+		font-size: 20px;
+		padding-bottom: 30px;
+		color: blue;
+	}
+	}
+}
+
 #searchBox{
 	display: inline;
-	height: 40px;
+	// height: 40px;
+	height: 43px;
 	width: 500px;
 	margin-top: 250px;
 	font-size: 20px;
@@ -49,7 +64,25 @@
 	background-color: black;
 	border: 1px black solid;
 	color: white;
-	margin: auto;	
+	margin: auto;
+
+}
+@media only screen and (max-device-width : 620px) {
+
+	#searchBox{
+	display: inline;
+	height: 85px;
+	width: 350px;
+	margin-top: 250px;
+	font-size: 48px;
+	margin-left: 265px;
+	text-align: center;
+	background-color: black;
+	border: 1px black solid;
+	color: white;
+	margin: auto;
+}
+
 }
 
 #subBut{
@@ -61,8 +94,32 @@
 	font-weight: bold;
 	background-color: black;
 	color: white;
-	border: 1px red solid
+	border: 1px red solid;
 }
+
+@media only screen and (max-device-width : 620px) {
+	#subBut{
+	display: inline;
+	font-family: 'Indie Flower', cursive;
+	font-size: 52px;
+	height: 100px;
+	width: 200px;
+	font-weight: bold;
+	background-color: black;
+	color: white;
+	border: 1px red solid;
+	}
+}
+
+@media only screen and (max-device-width : 620px) {
+	select {
+   -webkit-appearance: menulist-button;
+   height: 50px;
+   width: 60px;
+   font-size: 20px;
+}
+}
+
 
 h3{
 	color: white;
@@ -88,8 +145,23 @@ body {
 	font-weight: bolder;
 }
 
+@media only screen and (max-device-width : 620px){
+	#rhymeBox{
+	width: 500px;
+	opacity: .5;
+	margin: auto;
+	background-color: gray;
+	color: white;
+	font-size: 36px;
+	font-weight: bolder;
+
+	}
+}
+
 #wordBox{
 	font-size: 20px;
 	font-weight: bold;
 }
+
+
 

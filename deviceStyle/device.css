@@ -1,0 +1,76 @@
+#test {
+  border: 4px red solid;
+  text-align: center;
+  color: white;
+  background-color: black;
+  opacity: .5; }
+
+#logo {
+  width: 50px;
+  height: 40px;
+  background-color: black; }
+
+#imago {
+  background-image: url("images/graffitti.jpeg");
+  text-align: center;
+  height: 1500px;
+  opacity: .8; }
+  #imago #titleText {
+    margin: auto;
+    width: 800px; }
+    #imago #titleText #explain {
+      font-family: 'Indie Flower', cursive;
+      font-size: 48px;
+      padding-bottom: 30px;
+      color: white; }
+    #imago #titleText #error {
+      color: red;
+      font-size: 20px; }
+
+#searchBox {
+  display: inline;
+  height: 200px;
+  width: 500px;
+  margin-top: 250px;
+  font-size: 80px;
+  margin-left: 265px;
+  text-align: center;
+  background-color: black;
+  border: 1px black solid;
+  color: white;
+  margin: auto; }
+
+#subBut {
+  display: inline;
+  font-family: 'Indie Flower', cursive;
+  font-size: 80px;
+  height: 180px;
+  width: 200px;
+  font-weight: bold;
+  background-color: black;
+  color: white;
+  border: 1px red solid; }
+
+h3 {
+  color: white; }
+
+body {
+  background-color: black; }
+
+#soundcloud {
+  margin-top: 30px; }
+
+#rhymeBox {
+  width: 500px;
+  opacity: .5;
+  margin: auto;
+  background-color: gray;
+  color: white;
+  font-size: 22px;
+  font-weight: bolder; }
+
+#wordBox {
+  font-size: 20px;
+  font-weight: bold; }
+
+/*# sourceMappingURL=style.css.map */
