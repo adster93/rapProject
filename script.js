@@ -11,7 +11,7 @@ $(function() {
             success: function(data) {
                 console.log(data)
                     //console.log(data[0].words)
-                var rhymeWords = [];
+                var rhymeWords = []; 
                 if (data[0]) {
                     $('#errorMessage').text('')
                     for (i = 0; i < data[0].words.length; i++) {
@@ -20,30 +20,26 @@ $(function() {
                     }
                 } else {
                     $('#errorMessage').text('Choose another word! (p.s. no $ymb0l$!)')
-                        // $('#explain').append('<li id="error">' + 'Choose another word! (p.s. no $ymb0l$!)' + '</li>') 
-                        // $('#errorMessage').fadeOut(3000, function(){
-                        // });
+                    localStorage.removeItem(JSON.stringify(words[i]))
+                //     for(var i = 0, len = localStorage.length; i < len; ++i){
+                //     if(localStorage.getItem(JSON.parse(localStorage.key(i))) !== undefined){
+                //         console.log('word is good')
+                //         localStorage.setItem(query, JSON.stringify(rhymeWords))
+                //     }
+                     
+                // }
+                     
                 }
                 $('#rhymeBox').empty()
                 for (i = 0; i < rhymeWords.length; i++) {
                     $('#rhymeBox').append('<p>' + rhymeWords[i] + '<p>')
-                        // $(this).remove(); 
                 };
                 localStorage.setItem(query, JSON.stringify(rhymeWords))
-                    // if (localStorage.getItem('word') !== null) {
-                    //     for (i = 0; i < localStorage.length; i++) {
-                    //         localStorage.setItem('word' + i, JSON.stringify(rhymeWords))
-                    //     }
-                    // } else {
-                    //     localStorage.setItem('word', JSON.stringify(rhymeWords))
-                    // }
             },
             error: function(ajaxContext) {
                 $('#errorMessage').text('Please enter a word!')
-                    // $('#explain').append('<li id="error">' + 'Please enter a word!' + '</li>') 
-                    // $('#errorMessage').fadeOut(3000, function(){
-                    // $(this).remove(); 
-                    // });`
+                localStorage.removeItem(JSON.stringify(words[i]))
+
             }
         })
         return false
@@ -75,6 +71,7 @@ $(function() {
 
             }
         })
+
 //'<p>' + localStorage.getItem((localStorage.key(i))) + '</p>'
 
 
