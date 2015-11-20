@@ -1,5 +1,4 @@
 #test {
-
 	border: 4px red solid; 
 	text-align: center;
 	// background-image: url("images/mic.jpeg");
@@ -8,15 +7,55 @@
 	opacity: .5;
 }
 
-#logo{
+.navbar .nav > li > a, .navbar .nav > li > a:first-letter, .navbar .nav > li.current-menu-item > a, .navbar .nav > li.current-menu-ancestor > a {
+		margin-top: 20px;
+		display: inline;                      
+		font-size: 28px;
+	}
+	.navbar-nav > li > a, .navbar-brand {
+	    padding-bottom:0;
+	    height: 28px;
+	}
 
+	.navbar-nav > li {
+		margin-top: 20px;
+
+	}
+
+	.navbar {
+		min-height: 32px;
+	}
+
+
+@media only screen and (min-device-width : 630px) {
+	.navbar .nav > li > a, .navbar .nav > li > a:first-letter, .navbar .nav > li.current-menu-item > a, .navbar .nav > li.current-menu-ancestor > a {
+		margin-top: 40px;
+		display: inline;                      
+		font-size: 30px;
+	}
+	.navbar-nav > li > a, .navbar-brand {
+	    padding-top:4px; 
+	    padding-bottom:0;
+	    height: 28px;
+	}
+
+	.navbar-nav > li {
+		margin-top: 30px;
+		margin-left: 0px;
+	}
+
+	.navbar {
+		min-height:80px;
+	}
+}
+
+#logo{
 	width: 50px;
 	height: 40px;
 	background-color: black;
 }
 
 #imago{
-
 	background-image: url("images/graffitti.jpeg");
 	text-align: center;
 	height: 1500px;
@@ -30,7 +69,8 @@
 			padding-bottom: 30px;
 			color: white;
 		}
-		#error{
+		#errorMessage{
+			font-family: 'Indie Flower', cursive;
 			color: red;
 			font-size: 20px;
 		}
@@ -38,19 +78,29 @@
 
 }
 
-@media only screen and (max-device-width : 620px) {
+@media only screen and (max-device-width : 630px) {
 	#titleText{
 		margin:auto;
 		width: 200px;
 		height: 200px;
+		
 		#explain{
-		font-family: 'Indie Flower', cursive;
-		font-size: 20px;
-		padding-bottom: 30px;
-		color: blue;
-	}
+			font-family: 'Indie Flower', cursive;
+			font-size: 20px;
+			padding-bottom: 30px;
+			color: blue;
+		}
+		
 	}
 }
+
+
+@media only screen and (max-device-width : 630px) {
+	#error{
+		color: red;
+		font-size: 60px;
+		}
+	}
 
 #searchBox{
 	display: inline;
@@ -67,57 +117,70 @@
 	margin: auto;
 
 }
-@media only screen and (max-device-width : 620px) {
-
+@media only screen and (max-device-width : 630px) {
 	#searchBox{
-	display: inline;
-	height: 85px;
-	width: 350px;
-	margin-top: 250px;
-	font-size: 48px;
-	margin-left: 265px;
-	text-align: center;
-	background-color: black;
-	border: 1px black solid;
-	color: white;
-	margin: auto;
-}
+		display: inline;
+		height: 100px;
+		width: 350px;
+		margin-top: 250px;
+		font-size: 55px;
+		margin-left: 265px;
+		text-align: center;
+		background-color: black;
+		border: 1px black solid;
+		color: white;
+		margin: auto;
+	}
 
 }
 
 #subBut{
 	display: inline;
 	font-family: 'Indie Flower', cursive;
-	font-size: 28px;
-	height: 43px;
-	width: 200px;
-	font-weight: bold;
-	background-color: black;
-	color: white;
-	border: 1px red solid;
-}
-
-@media only screen and (max-device-width : 620px) {
-	#subBut{
-	display: inline;
-	font-family: 'Indie Flower', cursive;
-	font-size: 52px;
+	font-size: 40px;
 	height: 100px;
 	width: 200px;
 	font-weight: bold;
 	background-color: black;
 	color: white;
 	border: 1px red solid;
+}
+
+#subRecent{
+	display: inline;
+	font-family: 'Indie Flower', cursive;
+	font-size: 38px;
+	height: 200px;
+	width: 900px;
+	font-weight: bold;
+	background-color: black;
+	color: white;
+	border: 5px red solid;
+	padding: 10px;
+	margin-top: 30px;
+}
+
+@media only screen and (max-device-width : 630px) {
+	#subBut{
+		display: inline;
+		font-family: 'Indie Flower', cursive;
+		font-size: 52px;
+		height: 200px;
+		width: 300px;
+		font-weight: bold;
+		background-color: black;
+		color: white;
+		border: 1px red solid;
 	}
 }
 
-@media only screen and (max-device-width : 620px) {
-	select {
-   -webkit-appearance: menulist-button;
-   height: 50px;
-   width: 60px;
-   font-size: 20px;
-}
+@media only screen and (max-device-width : 630px) {
+	select{
+	   -webkit-appearance: menulist-button;
+	   height: 100px;
+	   width: 190px;
+	   font-size: 38px;
+	}
 }
 
 
@@ -125,14 +188,21 @@ h3{
 	color: white;
 }
 
-body {
-
+body{
 	background-color: black;
 }
 
-#soundcloud {
-
+#soundcloud{
 	margin-top: 30px;
+	height: 800px;
+	width: 800px;
+}
+
+@media only screen and (max-device-width : 630px){
+	#soundcloud{
+		height: 800px;
+		width: 700px;
+	}
 }
 
 #rhymeBox{
@@ -145,16 +215,15 @@ body {
 	font-weight: bolder;
 }
 
-@media only screen and (max-device-width : 620px){
+@media only screen and (max-device-width : 630px){
 	#rhymeBox{
-	width: 500px;
-	opacity: .5;
-	margin: auto;
-	background-color: gray;
-	color: white;
-	font-size: 36px;
-	font-weight: bolder;
-
+		width: 500px;
+		opacity: .5;
+		margin: auto;
+		background-color: gray;
+		color: white;
+		font-size: 36px;
+		font-weight: bolder;
 	}
 }
 
@@ -163,5 +232,52 @@ body {
 	font-weight: bold;
 }
 
+#recentWords{
+	margin-top: 50px;
+	display: flex;
+	flex-wrap: wrap;
+	opacity: .5;
+	background-color: gray;
+	color: white;
+	font-size: 22px;
+	font-weight: bolder;
+	// width: 89.2%;
+	justify-content: center;
+
+}
+
+// #recentWordBox{
+// 	// font-size: 20px;
+// 	// font-weight: bold;
+// 	margin: auto;
+// 	opacity: .5;
+// 	background-color: gray;
+// 	color: blue;
+// 	font-size: 22px;
+// 	font-weight: bolder;
+// 	width: 50%;
+	
+// }
+
+#rwords{
+		color: blue;
+		text-decoration: underline;
+		font-size: 26px;
+
+	}
 
 
+.columnDivs {
+	color: black;
+	width: 200px;
+	border: 5px red solid;
+	flex: auto;
+
+
+}
+
+.highlight {
+
+	background: yellow;
+	color: black;
+}
